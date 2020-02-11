@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zookeeper.Test", "Zookeeper.Test\Zookeeper.Test.csproj", "{07101B18-00FD-4E7E-879E-2DAE5D191274}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zookeeper.Test", "Zookeeper.Test\Zookeeper.Test.csproj", "{07101B18-00FD-4E7E-879E-2DAE5D191274}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zookeeper", "Zookeeper\Zookeeper.csproj", "{6624A16E-47FD-4EF6-95E9-F9466BC1EE03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{07101B18-00FD-4E7E-879E-2DAE5D191274}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07101B18-00FD-4E7E-879E-2DAE5D191274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07101B18-00FD-4E7E-879E-2DAE5D191274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6624A16E-47FD-4EF6-95E9-F9466BC1EE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6624A16E-47FD-4EF6-95E9-F9466BC1EE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6624A16E-47FD-4EF6-95E9-F9466BC1EE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6624A16E-47FD-4EF6-95E9-F9466BC1EE03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

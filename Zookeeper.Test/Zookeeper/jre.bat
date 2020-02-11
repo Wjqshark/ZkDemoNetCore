@@ -1,0 +1,1 @@
+jre-8u241-windows-x64.exe /s

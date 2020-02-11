@@ -136,7 +136,7 @@ namespace Zookeeper.Test
         /// <returns></returns>
         private static ZookeeperClient NewClient()
         {
-            ZookeeperClient client = new ZookeeperClient(new ZookeeperClientOptions("192.168.1.14:2181")
+            ZookeeperClient client = new ZookeeperClient(new ZookeeperClientOptions("localhost:2181")
             {
                 BasePath = "/", //default value
                 ConnectionTimeout = TimeSpan.FromSeconds(10), //default value
