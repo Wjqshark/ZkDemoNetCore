@@ -99,10 +99,12 @@ namespace Zookeeper
 
                 if (!string.IsNullOrEmpty(javaHome))
                 {
-                    SetSysEnvironmentByName("JAVA_HOME", javaHome);
-                    Console.WriteLine($"已设置 JAVA_HOME : {javaHome}");
-
-                    RunZookeeperServer();
+                    bool setOK = SetSysEnvironmentByName("JAVA_HOME", javaHome);
+                    if (setOK)
+                    {
+                        Console.WriteLine($"已设置 JAVA_HOME : {javaHome}");
+                        RunZookeeperServer();
+                    }
                 }
 
 
@@ -246,17 +248,20 @@ namespace Zookeeper
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        private static void SetSysEnvironmentByName(string key, string value)
+        private static bool SetSysEnvironmentByName(string key, string value)
         {
-            string result = string.Empty;
+            bool result = false;
             try
             {
                 System.Environment.SetEnvironmentVariable(key, value, EnvironmentVariableTarget.Machine);
+                result = true;
             }
             catch (Exception ee)
             {
                 Console.WriteLine($"Error:SetSysEnvironmentByName : {ee.ToString()}");
             }
+
+            return result;
         }
 
 
